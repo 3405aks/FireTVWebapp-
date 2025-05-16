@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firetvwebwrapper">
+
+    <application
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:allowBackup="true"
+        android:label="FireTV Web Wrapper"
+        android:supportsRtl="true">
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
